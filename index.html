@@ -21,9 +21,14 @@
                 box-shadow: -41px 23px 32px 5px rgba(0,0,0,0.5);
             }
 
-            h3 {
+            h3, h4 {
                 text-align: left;
                 padding: 20px 0 5px 20px;
+            }
+            
+            img {
+                width: 50%;
+                height: 50%;
             }
 
             figure, h1 {
@@ -33,10 +38,11 @@
             figcaption {
                 margin-top: 10px;
             }
-
+            
             hr {
-                margin: 40px;
+                width: 90%;
             }
+            
 
             /* classes */
 
@@ -45,13 +51,20 @@
                 border-radius: 0px 10em 0px 10em;
                 padding-bottom: 5px;
                 margin-bottom: 40px;
+                margin-top: 40px;
                 -webkit-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
                 -moz-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
                 box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
             }
-            
+
             .exercise {
                 padding-bottom: 5px;
+                border-radius: inherit;
+                -webkit-box-shadow: 0px 0px 38px 5px rgba(255, 255, 255, 0.37);
+                -moz-box-shadow: 0px 0px 38px 5px rgba(255, 255, 255, 0.37);
+                box-shadow: 0px 0px 38px 5px rgba(255, 255, 255, 0.37);
+                background-color: #24778e;
+                color: aliceblue;
             }
 
             .kitten-image {
@@ -60,6 +73,9 @@
                 -moz-box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.47);
                 box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.47);
             }
+            .picture {
+                border-radius: 5px;
+            }
         </style>
     </head>
     <body>
@@ -67,12 +83,15 @@
         <h2>Lessons' Projects - Quizzes</h2>
         <div class="quizzes">
             <h3>Lesson 4 - Mockup to Article</h3>
-            <figure>
+            <div class="exercise">
+                <h4>1. Mockup to Article</h4>
+                <figure>
                 <a href="Lesson4/mockup-to-article/index.html" target="_blank"><img src="http://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif" alt="Mockup to Article"></a>
                 <figcaption>
                     <a href="Lesson4/mockup-to-article/index.html" target="_blank">Mockup to Article</a>
                 </figcaption>
             </figure>
+            </div>
         </div>
         <div class="quizzes">
             <h3>Lesson 6 - CSS Synatax Problem Set</h3>
@@ -82,7 +101,6 @@
                     <a href="Lesson6/kittenStyle.html" target="_blank"><img src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg" alt="kitten" class="kitten-image"></a>
                     <figcaption><a href="Lesson6/kittenStyle.html" target="_blank"><em>Aww, isn't it cute! 🐱</em></a></figcaption>
                 </figure>
-                <hr>
             </div>
             <div class="exercise">
                 <h4>2. Style the Font</h4>
@@ -90,12 +108,25 @@
                     <a href="Lesson6/styleFont.html" target="_blank"><img src="http://udacity.github.io/fend/lessons/L3/problem-set/03-style-the-font/text.jpg" alt="udacity"></a>
                     <figcaption><a href="Lesson6/styleFont.html" target="_blank">Style Udacity text with a font</a></figcaption>
                 </figure>
-                <hr>
+            </div>
+            <div class="exercise">
+                <h4>3. Writing Selectors</h4>
+                <figure>
+                    <a href="Lesson6/writing-selectors/index.html" target="_blank"><img src="Lesson6/writing-selectors/img/clay-pot.jpg" alt="clay pot" class="picture"></a>
+                    <figcaption><a href="Lesson6/writing-selectors/index.html" target="_blank">CSS statement is made up of a selector and a declaration block</a></figcaption>
+                </figure>
+            </div>
+            <div class="exercise">
+                <h4>4. Using Attributes</h4>
+                <figure>
+                    <a href="/" target="_blank"><img src="http://udacity.github.io/fend/lessons/L3/problem-set/06-using-attributes/to-do-list-solution.jpg"></a>
+                    <figcaption><a href="/" target="_blank">Using Attributes</a></figcaption>
+                </figure>
             </div>
         </div>
         <div>
             <hr>
-            <figure><img src="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/themes/udacity_wp_1_8/images/Udacity_Logo_SVG_200x35.svg" width="20%" height="20%" alt="Udacity">
+            <figure><img src="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/themes/udacity_wp_1_8/images/Udacity_Logo_SVG_200x35.svg" alt="Udacity">
                 <figcaption>Created by elgeor_sk</figcaption>
             </figure>
         </div>
