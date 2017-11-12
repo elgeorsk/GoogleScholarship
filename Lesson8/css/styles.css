@@ -1,0 +1,66 @@
+/* add your CSS here */
+html {
+    margin: auto;
+    background-color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;;
+}
+
+div {
+    text-align: justify;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #fff;
+    border-color: #c9c9c9;
+    margin: auto;
+}
+
+h3 {
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.animal {
+    width: 300px;
+    border-style: none;
+}
+
+.container{
+    -webkit-box-shadow: 8px 5px 0px 0px #c9c9c9;
+    -moz-box-shadow: 8px 5px 0px 0px rgba(201,201,201,1);
+    box-shadow: 8px 5px 0px 0px rgba(201,201,201,1);
+    margin: auto;
+    width: 350px;
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+}
+
+.details{
+    margin: 10px;
+    padding: 0 5px 0 5px;
+    font-size: 84%;
+}
+
+.emhasis {
+    font-style: italic;
+}
