@@ -1,7 +1,9 @@
 html {
     background-color: black;
-    background-image: url("img/world_pixel.jpg");
+    background-image: url("http://www.powerpointhintergrund.com/uploads/pixel-art-background-17.png");
+    background-size: cover;
     background-attachment: fixed;
+    
 }
 
 body {
