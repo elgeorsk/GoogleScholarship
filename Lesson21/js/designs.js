@@ -20,9 +20,9 @@ function makeGrid() {
     rows = $("#input_height").val();
     columns = $("#input_width").val();
 
-    for (var i = 0; i < rows; i++) {
+    for (let i = 0; i < rows; i++) {
         grid = "<tr class=\"grid\">";
-        for (var j = 0; j < columns; j++) {
+        for (let j = 0; j < columns; j++) {
             grid = grid + "<td></td>";
         }
         $("#pixel_canvas").append(grid + "</tr>");
