@@ -4,37 +4,47 @@
 // When size is submitted by the user, call makeGrid()
 
 const sizePicker = $("#sizePicker");
+const colorPicker = $("#colorPicker");
 
-var i, j;
-var rowscolumns;
-var grid = "";
+let rows, columns, color;
+let grid = "";
 
-$(function(){
-    $(".canvas h2").hide();
+$(function () {
+    $(".canvas").hide();
 });
 
 function makeGrid() {
 
-// Your code goes here 
-    $(".canvas h2").show();
+    // Your code goes here 
+    $(".canvas").show();
     rows = $("#input_height").val();
     columns = $("#input_width").val();
-    
-    for (i = 0; i < rows; i++){
+
+    for (var i = 0; i < rows; i++) {
         grid = "<tr class=\"grid\">";
-        for (j = 0; j < columns; j++){
+        for (var j = 0; j < columns; j++) {
             grid = grid + "<td></td>";
         }
         $("#pixel_canvas").append(grid + "</tr>");
     }
-    
+
 }
 
-sizePicker.submit(function(event){
+sizePicker.submit(function (event) {
     event.preventDefault();
     $(".grid").remove();
-    $(".canvas h2").hide();
     $("h3").remove().before("#pixel_canvas");
+    $("h6").remove().after("#pixel_canvas");
     makeGrid();
     $("<h3>Created Canvas is " + columns + " x " + rows + "</h3>").insertBefore("#pixel_canvas");
+    $("<h6>*Press submit button in order to clear and re-create a new project!</h6>").insertAfter("#pixel_canvas");
+    color = document.getElementById("colorPicker").value;
+});
+
+colorPicker.change(function (event) {
+    color = document.getElementById("colorPicker").value;
+});
+
+$(document).click(function (event) {
+    $(event.target).closest("td").css("background-color", color);
 });

@@ -1,7 +1,7 @@
-html, div {
+html,
+div {
     font-family: Ubuntu;
     margin: auto;
-    width: 90%;
 }
 
 html {
@@ -9,7 +9,7 @@ html {
     background-image: url("http://www.powerpointhintergrund.com/uploads/pixel-art-background-17.png");
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 body {
@@ -35,6 +35,11 @@ h3 {
     text-align: center;
     font-style: italic;
     font-size: 90%;
+}
+
+h6 {
+    text-align: center;
+    background-color: yellow;
 }
 
 table,
@@ -70,3 +75,4 @@ input[type=number] {
     width: 50%;
     padding: 1em;
     border: 1px solid black;
+}
