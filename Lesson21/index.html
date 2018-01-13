@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Pixel Art Maker!</title>
@@ -8,16 +9,46 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
     <div class="main">
-        <h1>Elgeor<br>Pixel ArtMaker</h1>
+        <h1>Elgeor Pixel ArtMaker</h1>
+        <!-- Alert messages -->
+        <div class="alert success">
+            <span class="closebtn">&times;</span>
+            <strong>What it's new!</strong>
+            <ul>
+                <li>Comments at the code in designs.js.</li>
+                <li>Inputs validation.</li>
+                <li>Max canvas size is 250x250, check diffent values!</li>
+                <li>Some code improvements.</li>
+                <li>Alert messages - <a href="https://www.w3schools.com/howto/howto_js_alert.asp">https://www.w3schools.com/howto/howto_js_alert.asp</a></li>
+            </ul>
+        </div>
+        <div class="alert info">
+            <span class="closebtn">&times;</span>
+            <strong>Instructions</strong>
+            <ul>
+                <li>Set Grid Height and Grid Width.</li>
+                <li>Press "Submit" button.</li>
+                <li>Pick a color.</li>
+                <li>Click on table's cell to draw.</li>
+                <li>Double click on table's cell to remove the color.</li>
+            </ul>
+        </div>
+        <!-- End of Alert messages -->
         <div class="grid_specs">
             <h2>Choose Grid Size</h2>
             <form id="sizePicker">
-                Grid Height:
-                <input type="number" id="input_height" name="height" min="1" value="1"> Grid Width:
-                <input type="number" id="input_width" name="width" min="1" value="1">
-                <input type="submit">
+                <div class='specs'>
+                    <label>Grid Height:</label>
+                    <input type="number" id="input_height" name="height" min="1" value="1" required>
+                </div>
+                <div class='specs'>
+                    <label>Grid Width:</label>
+                    <input type="number" id="input_width" name="width" min="1" value="1" required>
+                </div>
+                <input type="submit" value='Submit'>
             </form>
             <h2>Pick A Color</h2>
             <input type="color" id="colorPicker">
@@ -29,4 +60,5 @@
         <script src="js/designs.js"></script>
     </div>
 </body>
+
 </html>

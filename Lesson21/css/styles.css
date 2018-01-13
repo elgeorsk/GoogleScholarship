@@ -1,15 +1,14 @@
 html,
 div {
     font-family: Ubuntu;
+    font-size: 20px;
     margin: auto;
 }
 
 html {
     background-color: black;
-    background-image: url("http://www.powerpointhintergrund.com/uploads/pixel-art-background-17.png");
+    background: url("http://www.powerpointhintergrund.com/uploads/pixel-art-background-17.png") no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
-
 }
 
 body {
@@ -39,7 +38,7 @@ h3 {
 
 h6 {
     text-align: center;
-    background-color: yellow;
+    background-color: #ff9800;
 }
 
 table,
@@ -61,8 +60,26 @@ td {
     width: 20px;
 }
 
-input[type=number] {
+label,
+input {
+    margin-right: 0.2em;
+}
+
+input[type=number],
+input[type=submit],
+input[type=color] {
     width: 6em;
+    margin: 0.5em auto;
+}
+
+#input_height:invalid,
+#input_width:invalid {
+    color: red;
+}
+
+ul {
+    text-align: left;
+    padding-left: 30%;
 }
 
 .main {
@@ -72,7 +89,67 @@ input[type=number] {
 }
 
 .grid_specs {
-    width: 50%;
+    width: 30%;
     padding: 1em;
     border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.specs {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.grid {
+    text-align: center;
+}
+
+.spooky {
+    background-image: url("https://i.pinimg.com/564x/00/d0/92/00d092944693e0b88abaa9345affefa5--game-ideas-pixel-art.jpg");
+    background-repeat:no-repeat;
+    text-align: center;
+    height: 512px;    
+    width: 512px;
+}
+
+p {
+    font-size: 110%;
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+/* Alert message - https://www.w3schools.com/howto/howto_js_alert.asp */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.info {
+    background-color: #2196F3;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
 }
