@@ -1,22 +1,26 @@
-html, div {
+html,
+div {
     margin: auto;
     width: 90%;
+
 }
 
 html {
     font-family: 'Ubuntu', sans-serif;
     background-color: cadetblue;
+    max-width: 1024px;
 }
 
 body {
     padding: 2em;
     background-color: aliceblue;
-    -webkit-box-shadow: -41px 23px 32px 5px rgba(0,0,0,0.5);
-    -moz-box-shadow: -41px 23px 32px 5px rgba(0,0,0,0.5);
-    box-shadow: -41px 23px 32px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -41px 23px 32px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -41px 23px 32px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: -41px 23px 32px 5px rgba(0, 0, 0, 0.5);
 }
 
-h3, h4 {
+h3,
+h4 {
     text-align: left;
     padding: 20px 0 5px 20px;
 }
@@ -26,7 +30,8 @@ img {
     height: 50%;
 }
 
-figure, h1 {
+figure,
+h1 {
     text-align: center;
 }
 
@@ -47,9 +52,9 @@ hr {
     padding-bottom: 5px;
     margin-bottom: 40px;
     margin-top: 40px;
-    -webkit-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
-    -moz-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
-    box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 0px 0px 38px 5px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 38px 5px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 38px 5px rgba(0, 0, 0, 0.37);
 }
 
 .exercise {
@@ -64,10 +69,11 @@ hr {
 
 .kitten-image {
     border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.47);
-    -moz-box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.47);
-    box-shadow: 0px 0px 12px 9px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.47);
 }
+
 .picture {
     border-radius: 5px;
 }
